@@ -19,7 +19,7 @@ Point it at a URL, run `/chat`, and your AI agent will inspect the site, extract
 1. **Clone this repository**
    ```bash
    git clone https://github.com/JCodesMore/automoti-chat.git my-clone
-   cd my-clone
+   cd automoti-chat
    ```
 2. **Install dependencies**
    ```bash
