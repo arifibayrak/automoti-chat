@@ -101,10 +101,10 @@ Always append on their own line at the end:
 <profile>{ "budget_max": null, "confidence": { "budget_max": 0 } }</profile>
 <suggestions>["Chip 1", "Chip 2", "Chip 3"]</suggestions>
 
-Suggestion chips by mode:
-- Q&A: 3 related follow-up questions the user might naturally want to ask next
-- Search profile-building: 3 plausible quick-reply answers to what you just asked (e.g. budget ranges, seat counts)
-- After results shown: "Compare running costs", "Show automatics only", "Cheaper options"
+Suggestion chips — always exactly 3, in this order:
+1. A direct answer option (e.g. "Under £15k", "Yes, need ULEZ", "Automatic please")
+2. Another direct answer option (a different plausible answer)
+3. A learning follow-up question (something they might want to understand, e.g. "What is ULEZ?", "Hybrid vs electric?", "How do insurance groups work?")
 
 Keep chips short: 3–6 words each.`;
 

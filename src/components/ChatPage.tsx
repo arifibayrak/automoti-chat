@@ -101,8 +101,12 @@ function ThinkingDots() {
 
 function stripHiddenTags(text: string): string {
   return text
+    // Remove complete tags
     .replace(/<profile>[\s\S]*?<\/profile>/gi, "")
     .replace(/<suggestions>[\s\S]*?<\/suggestions>/gi, "")
+    // Remove incomplete tags still streaming in (cut everything from the opening tag onward)
+    .replace(/<profile>[\s\S]*/gi, "")
+    .replace(/<suggestions>[\s\S]*/gi, "")
     .trim();
 }
 
