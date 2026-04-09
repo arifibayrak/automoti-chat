@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.3.0] - 2026-03-29
 
 ### Added
-- Multi-URL support for `/clone-website` — clone multiple sites in a single command with parallel processing and isolated output
+- Multi-URL support for `/chat` — clone multiple sites in a single command with parallel processing and isolated output
 - CI quality gates via GitHub Actions — automated lint, typecheck, and build on every push and PR
 - `npm run typecheck` and `npm run check` scripts for local quality validation
 - `.gitattributes` for cross-platform line ending normalization
@@ -37,9 +37,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Multi-platform AI agent support: Claude Code, Codex CLI, OpenCode, GitHub Copilot, Cursor, Windsurf, Gemini CLI, Cline/Roo Code, Continue, Amazon Q, Augment Code, Aider
-- Platform-specific instruction files and `/clone-website` skill for each supported agent
+- Platform-specific instruction files and `/chat` skill for each supported agent
 - `scripts/sync-agent-rules.sh` to regenerate platform instruction files from AGENTS.md
-- `scripts/sync-skills.mjs` to regenerate `/clone-website` skill across all platforms
+- `scripts/sync-skills.mjs` to regenerate `/chat` skill across all platforms
 - GEMINI.md for Gemini CLI configuration
 - Supported Platforms table in README
 - "Updating for Other Platforms" documentation section in README
@@ -63,7 +63,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Initial template scaffold for website reverse-engineering with Claude Code
-- `/clone-website` skill for full-site cloning pipeline
+- `/chat` skill for full-site cloning pipeline
 - `/build-from-spec` and `/customize` skills
 - Parallel builder agents with git worktree isolation
 - Chrome MCP integration for design token extraction
@@ -72,9 +72,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MIT license
 - README with badges, demo section, quick start, and star history
 
-[Unreleased]: https://github.com/JCodesMore/ai-website-cloner-template/compare/v0.3.1...HEAD
-[0.3.1]: https://github.com/JCodesMore/ai-website-cloner-template/compare/v0.3.0...v0.3.1
-[0.3.0]: https://github.com/JCodesMore/ai-website-cloner-template/compare/v0.2.0...v0.3.0
-[0.2.0]: https://github.com/JCodesMore/ai-website-cloner-template/compare/v0.1.1...v0.2.0
-[0.1.1]: https://github.com/JCodesMore/ai-website-cloner-template/compare/v0.1.0...v0.1.1
-[0.1.0]: https://github.com/JCodesMore/ai-website-cloner-template/releases/tag/v0.1.0
+[Unreleased]: https://github.com/JCodesMore/automoti-chat/compare/v0.3.1...HEAD
+[0.3.1]: https://github.com/JCodesMore/automoti-chat/compare/v0.3.0...v0.3.1
+[0.3.0]: https://github.com/JCodesMore/automoti-chat/compare/v0.2.0...v0.3.0
+[0.2.0]: https://github.com/JCodesMore/automoti-chat/compare/v0.1.1...v0.2.0
+[0.1.1]: https://github.com/JCodesMore/automoti-chat/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/JCodesMore/automoti-chat/releases/tag/v0.1.0

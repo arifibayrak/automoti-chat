@@ -1,7 +1,7 @@
 ---
 description: "Reverse-engineer and clone any website as a pixel-perfect replica"
 ---
-<!-- AUTO-GENERATED from .claude/skills/clone-website/SKILL.md — do not edit directly.
+<!-- AUTO-GENERATED from .claude/skills/chat/SKILL.md — do not edit directly.
      Run `node scripts/sync-skills.mjs` to regenerate. -->
 
 

@@ -1,12 +1,12 @@
 # AI Website Cloner Template
 
-<a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" /></a> <a href="https://github.com/JCodesMore/ai-website-cloner-template/stargazers"><img src="https://img.shields.io/github/stars/JCodesMore/ai-website-cloner-template?style=flat" alt="Stars" /></a> <a href="https://discord.gg/hrTSX5yTpB"><img src="https://img.shields.io/discord/1400896964597383279?label=discord" alt="Discord" /></a>
+<a href="https://github.com/JCodesMore/automoti-chat/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" /></a> <a href="https://github.com/JCodesMore/automoti-chat/stargazers"><img src="https://img.shields.io/github/stars/JCodesMore/automoti-chat?style=flat" alt="Stars" /></a> <a href="https://discord.gg/hrTSX5yTpB"><img src="https://img.shields.io/discord/1400896964597383279?label=discord" alt="Discord" /></a>
 
-A reusable template for reverse-engineering any website into a clean, modern Next.js codebase using AI coding agents. 
+Automoti — AI-powered UK car search into a clean, modern Next.js codebase using AI coding agents. 
 
 **Recommended: [Claude Code](https://docs.anthropic.com/en/docs/claude-code) with Opus 4.6 for best results** — but works with a variety of AI coding agents.
 
-Point it at a URL, run `/clone-website`, and your AI agent will inspect the site, extract design tokens and assets, write component specs, and dispatch parallel builders to reconstruct every section.
+Point it at a URL, run `/chat`, and your AI agent will inspect the site, extract design tokens and assets, write component specs, and dispatch parallel builders to reconstruct every section.
 
 ## Demo
 
@@ -18,7 +18,7 @@ Point it at a URL, run `/clone-website`, and your AI agent will inspect the site
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/JCodesMore/ai-website-cloner-template.git my-clone
+   git clone https://github.com/JCodesMore/automoti-chat.git my-clone
    cd my-clone
    ```
 2. **Install dependencies**
@@ -31,7 +31,7 @@ Point it at a URL, run `/clone-website`, and your AI agent will inspect the site
    ```
 4. **Run the skill**:
    ```
-   /clone-website <target-url1> [<target-url2> ...]
+   /chat <target-url1> [<target-url2> ...]
    ```
 5. **Customize** (optional) — after the base clone is built, modify as needed
 
@@ -69,7 +69,7 @@ Point it at a URL, run `/clone-website`, and your AI agent will inspect the site
 
 ## How It Works
 
-The `/clone-website` skill runs a multi-phase pipeline:
+The `/chat` skill runs a multi-phase pipeline:
 
 1. **Reconnaissance** — screenshots, design token extraction, interaction sweep (scroll, click, hover, responsive)
 2. **Foundation** — updates fonts, colors, globals, downloads all assets
@@ -111,7 +111,7 @@ docs/
   design-references/ # Screenshots
 scripts/
   sync-agent-rules.sh  # Regenerate agent instruction files
-  sync-skills.mjs      # Regenerate /clone-website for all platforms
+  sync-skills.mjs      # Regenerate /chat for all platforms
 AGENTS.md           # Agent instructions (single source of truth)
 CLAUDE.md           # Claude Code config (imports AGENTS.md)
 GEMINI.md           # Gemini CLI config (imports AGENTS.md)
@@ -141,14 +141,14 @@ Two source-of-truth files power all platform support. Edit the source, then run 
 | What                   | Source of truth                         | Sync command                       |
 | ---------------------- | --------------------------------------- | ---------------------------------- |
 | Project instructions   | `AGENTS.md`                             | `bash scripts/sync-agent-rules.sh` |
-| `/clone-website` skill | `.claude/skills/clone-website/SKILL.md` | `node scripts/sync-skills.mjs`     |
+| `/chat` skill | `.claude/skills/chat/SKILL.md` | `node scripts/sync-skills.mjs`     |
 
 Each script regenerates the platform-specific copies automatically. Agents that read the source files natively need no regeneration.
 
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=JCodesMore/ai-website-cloner-template&type=Date)](https://star-history.com/#JCodesMore/ai-website-cloner-template&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=JCodesMore/automoti-chat&type=Date)](https://star-history.com/#JCodesMore/automoti-chat&Date)
 
 ## License
 
