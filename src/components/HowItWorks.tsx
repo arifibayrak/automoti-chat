@@ -103,7 +103,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-[#E8E3DB] py-16 md:py-28">
+    <section id="how-it-works" data-nav-theme="light" className="bg-[#E8E3DB] py-16 md:py-28">
       <div className="max-w-[1360px] mx-auto px-5 md:px-10">
         {/* Header */}
         <div className="mb-10 md:mb-16">

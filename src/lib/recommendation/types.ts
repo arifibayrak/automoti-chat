@@ -30,6 +30,7 @@ export interface Car {
 export interface UserProfile {
   // Tier 1
   budget_max?: number;
+  budget_min?: number;
   seats_required?: number;
   primary_usage?: string;
   fuel_preference?: string;

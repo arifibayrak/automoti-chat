@@ -13,7 +13,7 @@ export function CTAWaitlist() {
   }
 
   return (
-    <section id="waitlist" className="bg-[#F9F8F6] py-40">
+    <section id="waitlist" data-nav-theme="light" className="bg-[#F9F8F6] py-40">
       <div className="max-w-[1360px] mx-auto px-10">
         <div className="max-w-md mx-auto text-center">
           <h2 className="font-['GesturaHeadline'] text-5xl font-normal leading-tight tracking-[-0.96px] text-[#1C1D1F] mb-4">

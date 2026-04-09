@@ -34,9 +34,18 @@ function usageFit(car: Car, profile: UserProfile): number {
 function costFit(car: Car, profile: UserProfile): number {
   if (!profile.budget_max) return 0.6;
   const ratio = car.price / profile.budget_max;
-  if (ratio <= 0.6) return 1.0;
-  if (ratio <= 0.8) return 0.85;
-  if (ratio <= 1.0) return 0.7;
+
+  // Below budget_min: user explicitly stated a floor
+  if (profile.budget_min && car.price < profile.budget_min) {
+    const floorRatio = car.price / profile.budget_min;
+    if (floorRatio < 0.7) return 0.2;
+    return 0.45;
+  }
+
+  // Sweet spot is 70–100% of budget_max (in range = ideal)
+  if (ratio <= 0.5) return 0.5;
+  if (ratio <= 0.7) return 0.75;
+  if (ratio <= 1.0) return 0.95;
   if (ratio <= 1.15) return 0.45;
   return 0.2;
 }

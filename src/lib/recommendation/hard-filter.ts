@@ -8,6 +8,7 @@ export function hardFilter(cars: Car[], profile: UserProfile): { passed: Car[]; 
     const fail: string[] = [];
 
     if (profile.budget_max && car.price > profile.budget_max * 1.3) fail.push('price');
+    if (profile.budget_min && car.price < profile.budget_min * 0.85) fail.push('price_min');
 
     if (profile.seats_required && car.seating_capacity < profile.seats_required) fail.push('seats');
 
